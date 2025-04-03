@@ -1,26 +1,39 @@
+@import url("../styles/raleway.css");
+@import url("../styles/marquee.css");
+
 @import "tailwindcss";
+@import "../styles/tailwind-fonts.css";
+@import "../styles/tailwind-colors.css";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+html {
+  scroll-behavior: smooth;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+*:focus {
+  @apply outline-[4px] outline-offset-0 outline-purple-base/10;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  @apply font-raleway font-normal;
+}
+
+/* Scroll bars */
+::-webkit-scrollbar {
+  background-color: #f0e9e9;
+  height: 4px;
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  height: 10vh;
+  background-color: #67047658;
+  border-radius: 20px;
+  width: 10px;
+}
+
+/* Horizontal scrollbar thumb */
+::-webkit-scrollbar-thumb:horizontal {
+  height: 4px; /* Ensure the thumb height matches the scrollbar */
+  background-color: #67047658;
+  border-radius: 20px;
 }

@@ -1,0 +1,29 @@
+@theme {
+  /* Purple */
+  --color-purple-base: #660476;
+  --color-purple-light: #da2ff6;
+
+  /* Blue */
+  --color-blue-base: #040876;
+  --color-blue-light: #f5f3ff;
+
+  /* Grey */
+  --color-grey-base: #ececec;
+  --color-grey-light: #dbdbdb;
+  --color-grey-text: #5d5d5d;
+  --color-grey-bg: #f8f8f8;
+
+  /* Orange */
+  --color-orange-base: #ed6300;
+  --color-orange-deep: #df6951;
+  --color-orange-light: #fbb040;
+
+  /* Yellow */
+  --color-yellow-base: #ffae00;
+
+  /* Error */
+  --color-error-base: #ed3d2f;
+
+  /* Success */
+  --color-success-base: #376e37;
+}
