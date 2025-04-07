@@ -8,6 +8,10 @@ export namespace Contact {
       first_name: string;
       last_name: string;
       phone: string;
+      /**
+       *  ⁠⁠general, ⁠business, ⁠⁠tourists
+       */
+      type: "general" | "business" | "tourists";
     }
 
     export type Response = General.SuccessResponse;

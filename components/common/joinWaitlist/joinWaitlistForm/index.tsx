@@ -3,8 +3,14 @@
 import Button from "@/components/common/button";
 import Form from "@/components/common/forms/form";
 import FormInput from "@/components/common/forms/formInput";
+import useWaitlistSubscriptionLogic from "@/hooks/utils/useWaitlistSubscriptionLogic";
+import { Api } from "@/types";
 import React from "react";
-import useWaitlistSubscriptionLogic from "../../../hooks/useWaitlistSubscriptionLogic";
+
+interface Props {
+  bgColor?: "purple" | "blue";
+  type: Api.Contact.WaitlistSubscription.Request["type"];
+}
 
 export interface IJoinWaitlistForm {
   firstName: string;
@@ -20,9 +26,9 @@ const initialValues: IJoinWaitlistForm = {
   email: "",
 };
 
-const JoinWaitlistForm = () => {
+const JoinWaitlistForm = ({ bgColor, type }: Props) => {
   const { handleSubmit, isLoading, validationSchema } =
-    useWaitlistSubscriptionLogic();
+    useWaitlistSubscriptionLogic({ type });
 
   return (
     <div className="">
@@ -67,6 +73,7 @@ const JoinWaitlistForm = () => {
             fullWidth
             loading={isLoading}
             type="submit"
+            variant={bgColor}
           />
         </div>
       </Form>

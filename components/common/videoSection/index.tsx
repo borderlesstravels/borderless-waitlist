@@ -6,9 +6,14 @@ import React, { Suspense } from "react";
 import ReactPlayer from "react-player";
 import useSettle from "@/hooks/utils/useSettle";
 
+interface Props {
+  header: string;
+  subHeader: string;
+}
+
 const WAITLIST_VIDEO_URL = "https://youtu.be/EIgqKUASR3A";
 
-const VideoSection = () => {
+const VideoSection = ({ header, subHeader }: Props) => {
   const { isSettled } = useSettle();
 
   return (
@@ -20,17 +25,16 @@ const VideoSection = () => {
           tabletVariant="heading-1"
           className="text-center font-bold max-w-[750px] mx-auto text-grey-text mb-0"
         >
-          STOP Overpaying for Flights -<br className="hidden md:inline" />
+          {header}
+          <br className="hidden md:inline" />
         </Typography>
         <Typography
           as="h1"
-          variant="heading-4"
+          variant="body-large"
           tabletVariant="heading-4"
           className="text-center font-bold max-w-[750px] mx-auto text-grey-text mb-8"
         >
-          <span className="text-purple-base">
-            Enjoy same luxury and comfort for up to 30% less.
-          </span>
+          <span className="text-purple-base">{subHeader}</span>
         </Typography>
         <div className="relative bg-grey-text rounded-xl overflow-hidden min-h-[300px] md:min-h-[550px]">
           {isSettled && (

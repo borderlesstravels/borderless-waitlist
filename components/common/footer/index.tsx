@@ -13,10 +13,20 @@ import {
   TWITTER_URL,
   LINKEDIN_URL,
 } from "@/constants/socialLinks";
+import cs from "classnames";
 
-const Footer = () => {
+interface Props {
+  bgColor?: "purple" | "blue";
+}
+
+const Footer = ({ bgColor = "purple" }: Props) => {
   return (
-    <footer className="bg-purple-base py-14 md:py-20 text-white">
+    <footer
+      className={cs("py-14 md:py-20 text-white", {
+        "bg-purple-base": bgColor === "purple",
+        "bg-blue-base": bgColor === "blue",
+      })}
+    >
       <Container className="flex flex-col lg:flex-row lg:items-center justify-between gap-10">
         <div>
           <Image

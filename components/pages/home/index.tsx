@@ -1,20 +1,31 @@
 import React from "react";
-import Header from "./components/header";
-import VideoSection from "./components/videoSection";
-import JoinWaitlist from "./components/joinWaitlist";
-import Footer from "./components/footer";
-import Countdown from "./components/countdown";
-import FlightsInfo from "./components/flightsInfo";
-import PartnersSlider from "./components/partnersSlider";
+import JoinWaitlist from "@/components/common/joinWaitlist";
+import PartnersSlider from "@/components/common/partnersSlider";
+import Header from "@/components/common/header";
+import VideoSection from "@/components/common/videoSection";
+import Countdown from "@/components/common/countdown";
+import Footer from "@/components/common/footer";
+import SectionWithImage from "@/components/common/sectionWithImage";
 
 const HomeScreen = () => {
   return (
     <div className="bg-[#FAFBFD]">
       <Header />
-      <VideoSection />
+      <VideoSection
+        header="STOP Overpaying for Flights -"
+        subHeader="Enjoy same luxury and comfort for up to 30% less."
+      />
       <Countdown />
-      <FlightsInfo />
-      <JoinWaitlist />
+      <SectionWithImage
+        header="Book flights with ease and let's turn every of your journey to
+            a memorable adventure."
+        image="/images/waitlist-flight-treasure.png"
+        subHeader="Borderless Travels is launching soon and we are offering up to 30%
+            less for both local and international flights. Exclusive to the
+            first 1,000 people. Join the waitlist NOW to get early access!"
+        showIcons
+      />
+      <JoinWaitlist type="general" />
       <PartnersSlider />
       <Footer />
     </div>

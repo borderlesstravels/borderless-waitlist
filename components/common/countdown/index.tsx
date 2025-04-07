@@ -3,8 +3,8 @@
 import Container from "@/components/common/container";
 import Typography from "@/components/common/typography";
 import React, { useEffect, useState } from "react";
-import { calculateTimeLeft } from "../../utils/calculateTimeLeft";
 import CountdownItem from "./countdownItem";
+import { calculateTimeLeft } from "@/utils/calculateTimeLeft";
 
 /**
  * 1st of May, 2025
@@ -30,7 +30,7 @@ const Countdown = () => {
   }, []);
 
   return (
-    <section className="py-14 text-grey-text">
+    <section className="pt-14 pb-20 text-grey-text">
       <Container>
         <Typography
           as="h2"
