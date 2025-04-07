@@ -1,4 +1,4 @@
-import { ITimeLeft } from "../../../common/countdown";
+import { ITimeLeft } from "@/components/common/countdown";
 
 const padWithZero = (num: number) => (num < 10 ? `0${num}` : num.toString());
 

@@ -1,7 +1,7 @@
 import { Shape } from "@/validations/constants/shape";
 import * as yup from "yup";
-import { IJoinWaitlistForm } from "../components/joinWaitlist/joinWaitlistForm";
 import { PHONE_NUMBER_REGEX } from "@/validations/regex";
+import { IJoinWaitlistForm } from ".";
 
 export const joinWaitlistSchema = () =>
   yup.object().shape<Shape<IJoinWaitlistForm>>({
