@@ -6,10 +6,12 @@ import VideoSection from "@/components/common/videoSection";
 import Countdown from "@/components/common/countdown";
 import Footer from "@/components/common/footer";
 import SectionWithImage from "@/components/common/sectionWithImage";
+import Meta from "./components/meta";
 
 const HomeScreen = () => {
   return (
     <div className="bg-[#FAFBFD]">
+      <Meta />
       <Header />
       <VideoSection
         header="STOP Overpaying for Flights -"
