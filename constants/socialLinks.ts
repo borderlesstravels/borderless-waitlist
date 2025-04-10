@@ -17,4 +17,4 @@ export const TOURS_EMAIL = "tours@borderless.travel";
 export const SUPPORT_EMAIL = "support@borderless.travel";
 
 export const WEBSITE_NAME = "Borderless Travels";
-export const WEBSITE_URL = "https://borderless-website.onrender.com";
+export const WEBSITE_URL = "https://borderless.travel";
