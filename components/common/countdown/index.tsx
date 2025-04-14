@@ -6,9 +6,6 @@ import React, { useEffect, useState } from "react";
 import CountdownItem from "./countdownItem";
 import { calculateTimeLeft } from "@/utils/calculateTimeLeft";
 
-/**
- * 1st of May, 2025
- */
 const TARGET_DATE = "2025-05-15T00:00:00";
 
 export interface ITimeLeft {
