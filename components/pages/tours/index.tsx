@@ -7,10 +7,12 @@ import SectionWithImage from "@/components/common/sectionWithImage";
 import VideoSection from "@/components/common/videoSection";
 import React from "react";
 import WhyTravel from "./components/whyTravel";
+import Meta from "./components/meta";
 
 const ToursScreen = () => {
   return (
     <div className="bg-[#FAFBFD]">
+      <Meta />
       <Header />
       <VideoSection
         header="Go Pack Your Bags, It's Time To Experience The World!"
