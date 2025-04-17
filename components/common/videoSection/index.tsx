@@ -17,10 +17,10 @@ const VideoSection = ({ header, subHeader }: Props) => {
   const { isSettled } = useSettle();
 
   return (
-    <section className="bg-[#FAF1FA] py-20">
-      <Container className="flex items-center gap-8">
+    <section className="bg-[#FAF1FA] py-10 md:py-20">
+      <Container className="flex flex-col lg:flex-row items-center gap-8">
         <VideoSectionBody header={header} subHeader={subHeader} />
-        <div className="flex-1 relative bg-grey-text rounded-xl overflow-hidden min-h-[300px] md:min-h-[480px]">
+        <div className="w-full lg:w-auto lg:flex-1 relative bg-grey-text rounded-xl overflow-hidden min-h-[300px] md:min-h-[480px]">
           {isSettled && (
             <Suspense fallback={null}>
               <ReactPlayer

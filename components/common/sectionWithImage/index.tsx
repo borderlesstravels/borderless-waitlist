@@ -28,7 +28,7 @@ const SectionWithImage = ({
   showBtnLink = true,
 }: Props) => {
   return (
-    <section className="pt-8 md:py-10">
+    <section className="py-10">
       <Container>
         <div
           className={cs(

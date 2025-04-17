@@ -13,7 +13,7 @@ export const JOIN_WAITLIST_SECTION_ID = "join-waitlist";
 
 const JoinWaitlist = ({ bgColor = "purple", type }: Props) => {
   return (
-    <section className="py-20" id={JOIN_WAITLIST_SECTION_ID}>
+    <section className="pb-20" id={JOIN_WAITLIST_SECTION_ID}>
       <Container>
         <div className="w-full max-w-[850px] shadow-lg bg-white mx-auto pt-7 pb-14 px-7 rounded-xl">
           <Typography
