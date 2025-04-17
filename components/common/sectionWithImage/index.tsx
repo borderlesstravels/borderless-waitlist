@@ -16,6 +16,7 @@ interface Props {
   image: string;
   bgColor?: "purple" | "blue";
   showIcons?: boolean;
+  showBtnLink?: boolean;
 }
 
 const SectionWithImage = ({
@@ -24,6 +25,7 @@ const SectionWithImage = ({
   subHeader,
   image,
   bgColor = "purple",
+  showBtnLink = true,
 }: Props) => {
   return (
     <section className="pt-8 md:py-10">
@@ -54,13 +56,15 @@ const SectionWithImage = ({
           <Typography className="text-center relative mb-10 max-w-[720px] mx-auto">
             {subHeader}
           </Typography>
-          <div className="flex justify-center mb-4">
-            <ButtonLink
-              href={`#${JOIN_WAITLIST_SECTION_ID}`}
-              label="Join Waitlist"
-              variant="white"
-            />
-          </div>
+          {showBtnLink && (
+            <div className="flex justify-center mb-4">
+              <ButtonLink
+                href={`#${JOIN_WAITLIST_SECTION_ID}`}
+                label="Join Waitlist"
+                variant="white"
+              />
+            </div>
+          )}
           <div className="w-full md:w-[400px] h-[320px] relative mx-auto">
             <Image
               alt=""

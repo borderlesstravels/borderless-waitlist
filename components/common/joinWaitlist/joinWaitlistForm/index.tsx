@@ -42,28 +42,27 @@ const JoinWaitlistForm = ({ bgColor, type }: Props) => {
             <FormInput
               name="firstName"
               disabled={isLoading}
-              label="First Name"
-            />
-          </div>
-          <div className="flex-1">
-            <FormInput name="lastName" disabled={isLoading} label="Last Name" />
-          </div>
-        </div>
-        <div className="flex flex-col md:flex-row md:gap-5">
-          <div className="flex-1">
-            <FormInput
-              name="phoneNumber"
-              disabled={isLoading}
-              type="tel"
-              label="Phone Number"
+              placeholder="Enter first name"
+              label={
+                <span>
+                  First Name{" "}
+                  <span className="text-error-base text-[18px]">*</span>
+                </span>
+              }
             />
           </div>
           <div className="flex-1">
             <FormInput
               name="email"
               disabled={isLoading}
+              placeholder="Enter email"
               type="email"
-              label="Email Address"
+              label={
+                <span>
+                  Email Address{" "}
+                  <span className="text-error-base text-[18px]">*</span>
+                </span>
+              }
             />
           </div>
         </div>

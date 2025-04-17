@@ -6,7 +6,7 @@ import EyeSlashIcon from "@/assets/svgs/eye-slash.svg";
 import Typography from "../../typography";
 
 interface Props extends React.InputHTMLAttributes<HTMLInputElement> {
-  label?: string;
+  label?: ReactNode;
   name: string;
   extraDetails?: ReactNode;
   dataCy?: string;

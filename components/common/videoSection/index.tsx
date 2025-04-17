@@ -1,10 +1,10 @@
 "use client";
 
 import Container from "@/components/common/container";
-import Typography from "@/components/common/typography";
 import React, { Suspense } from "react";
 import ReactPlayer from "react-player";
 import useSettle from "@/hooks/utils/useSettle";
+import VideoSectionBody from "./videoSectionBody";
 
 interface Props {
   header: string;
@@ -17,26 +17,10 @@ const VideoSection = ({ header, subHeader }: Props) => {
   const { isSettled } = useSettle();
 
   return (
-    <section className="bg-[#FAF1FA] py-10">
-      <Container>
-        <Typography
-          as="h1"
-          variant="heading-4"
-          tabletVariant="heading-1"
-          className="text-center font-bold max-w-[750px] mx-auto text-grey-text mb-0"
-        >
-          {header}
-          <br className="hidden md:inline" />
-        </Typography>
-        <Typography
-          as="h1"
-          variant="body-large"
-          tabletVariant="heading-4"
-          className="text-center font-bold max-w-[750px] mx-auto text-grey-text mb-8"
-        >
-          <span className="text-purple-base">{subHeader}</span>
-        </Typography>
-        <div className="relative bg-grey-text rounded-xl overflow-hidden min-h-[300px] md:min-h-[550px]">
+    <section className="bg-[#FAF1FA] py-20">
+      <Container className="flex items-center gap-8">
+        <VideoSectionBody header={header} subHeader={subHeader} />
+        <div className="flex-1 relative bg-grey-text rounded-xl overflow-hidden min-h-[300px] md:min-h-[480px]">
           {isSettled && (
             <Suspense fallback={null}>
               <ReactPlayer

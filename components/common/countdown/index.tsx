@@ -36,7 +36,7 @@ const Countdown = () => {
           xlDesktopVariant="heading-1"
           className="underline uppercase text-grey-text mb-8 font-bold mx-auto w-max"
         >
-          Launching SOON
+          Time until launch
         </Typography>
         <div className="max-w-[800px] mx-auto grid grid-cols-2 md:grid-cols-4 gap-7 md:gap-10">
           <CountdownItem label="Days" value={timeLeft?.days || "--"} />

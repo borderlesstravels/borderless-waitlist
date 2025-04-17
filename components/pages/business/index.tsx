@@ -18,6 +18,7 @@ const BusinessScreen = () => {
         header="We Handle Everything, You Just Show Up"
         subHeader="No stress, confusion or last-minute surprises."
       />
+      <Countdown />
       <JoinWaitlist bgColor="blue" type="business" />
       <WhyTravel />
       <SectionWithImage
@@ -26,7 +27,6 @@ const BusinessScreen = () => {
         subHeader="Join our waitlist so you can be the first to know when we launch."
         bgColor="blue"
       />
-      <Countdown />
       <PartnersSlider />
       <Footer bgColor="blue" />
     </div>

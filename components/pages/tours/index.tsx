@@ -18,6 +18,7 @@ const ToursScreen = () => {
         header="Go Pack Your Bags, It's Time To Experience The World!"
         subHeader="We handle every detail. You just show up and enjoy."
       />
+      <Countdown />
       <JoinWaitlist type="tourists" />
       <WhyTravel />
       <SectionWithImage
@@ -25,7 +26,6 @@ const ToursScreen = () => {
         image="/images/waitlist-tourists-image.png"
         subHeader="Indulge in an experience that 99.9% will never get at a price that feels almost unbelievable. We handle everything from flight booking, short let reservation, airport transfers. We do the planning, You do the flexing. No last minute - unpleasant surprises."
       />
-      <Countdown />
       <PartnersSlider />
       <Footer />
     </div>

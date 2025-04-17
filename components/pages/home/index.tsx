@@ -18,16 +18,16 @@ const HomeScreen = () => {
         subHeader="Enjoy same luxury and comfort for up to 30% less."
       />
       <Countdown />
+      <JoinWaitlist type="general" />
       <SectionWithImage
         header="Book flights with ease and let's turn every of your journey to
             a memorable adventure."
-        image="/images/waitlist-flight-treasure.png"
+        image="/images/waitlist-flight-image.png"
         subHeader="Borderless Travels is launching soon and we are offering up to 30%
             less for both local and international flights. Exclusive to the
             first 1,000 people. Join the waitlist NOW to get early access!"
         showIcons
       />
-      <JoinWaitlist type="general" />
       <PartnersSlider />
       <Footer />
     </div>
