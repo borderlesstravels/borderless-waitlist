@@ -37,7 +37,7 @@ const JoinWaitlistForm = ({ bgColor, type }: Props) => {
         onSubmit={handleSubmit}
         validationSchema={validationSchema}
       >
-        <div className="flex flex-col md:flex-row md:gap-5">
+        <div className="flex flex-col">
           <div className="flex-1">
             <FormInput
               name="firstName"

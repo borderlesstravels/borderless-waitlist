@@ -1,25 +1,26 @@
 import Countdown from "@/components/common/countdown";
 import Footer from "@/components/common/footer";
 import Header from "@/components/common/header";
-import JoinWaitlist from "@/components/common/joinWaitlist";
 import PartnersSlider from "@/components/common/partnersSlider";
 import SectionWithImage from "@/components/common/sectionWithImage";
 import VideoSection from "@/components/common/videoSection";
 import React from "react";
 import WhyTravel from "./components/whyTravel";
 import Meta from "./components/meta";
+import HeroSection from "@/components/common/heroSection";
 
 const ToursScreen = () => {
   return (
     <div className="bg-[#FAFBFD]">
       <Meta />
       <Header />
-      <VideoSection
-        header="Go Pack Your Bags, It's Time To Experience The World!"
-        subHeader="We handle every detail. You just show up and enjoy."
+      <HeroSection
+        header="STOP Overpaying for Flights -"
+        subHeader="Enjoy same luxury and comfort for up to 30% less."
+        type="tourists"
       />
       <Countdown />
-      <JoinWaitlist type="tourists" />
+      <VideoSection />
       <WhyTravel />
       <SectionWithImage
         header="Enjoy 5-Star Travel Without The 5-Star Price"

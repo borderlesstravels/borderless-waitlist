@@ -1,5 +1,4 @@
 import React from "react";
-import JoinWaitlist from "@/components/common/joinWaitlist";
 import PartnersSlider from "@/components/common/partnersSlider";
 import Header from "@/components/common/header";
 import VideoSection from "@/components/common/videoSection";
@@ -7,18 +6,20 @@ import Countdown from "@/components/common/countdown";
 import Footer from "@/components/common/footer";
 import SectionWithImage from "@/components/common/sectionWithImage";
 import Meta from "./components/meta";
+import HeroSection from "@/components/common/heroSection";
 
 const HomeScreen = () => {
   return (
     <div className="bg-[#FAFBFD]">
       <Meta />
       <Header />
-      <VideoSection
+      <HeroSection
         header="STOP Overpaying for Flights -"
         subHeader="Enjoy same luxury and comfort for up to 30% less."
+        type="general"
       />
       <Countdown />
-      <JoinWaitlist type="general" />
+      <VideoSection />
       <SectionWithImage
         header="Book flights with ease and let's turn every of your journey to
             a memorable adventure."
