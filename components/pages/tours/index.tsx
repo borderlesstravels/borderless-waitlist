@@ -15,8 +15,8 @@ const ToursScreen = () => {
       <Meta />
       <Header />
       <HeroSection
-        header="STOP Overpaying for Flights -"
-        subHeader="Enjoy same luxury and comfort for up to 30% less."
+        header="Go Pack Your Bags, It's Time To Experience The World!"
+        subHeader="We handle every detail. You just show up and enjoy"
         type="tourists"
       />
       <Countdown />

@@ -19,7 +19,7 @@ const JoinWaitlist = ({ bgColor = "purple", type }: Props) => {
           variant="heading-4"
           tabletVariant="heading-3"
           xlDesktopVariant="heading-2"
-          className="text-black/80 text-center font-bold mb-10"
+          className="animate-blink text-[#760404] text-center font-bold mb-10"
         >
           Join Waitlist to Claim Your Complimentary Discount Voucher at Launch
         </Typography>

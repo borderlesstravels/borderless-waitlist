@@ -15,8 +15,8 @@ const BusinessScreen = () => {
       <Meta />
       <Header />
       <HeroSection
-        header="STOP Overpaying for Flights -"
-        subHeader="Enjoy same luxury and comfort for up to 30% less."
+        header="We Handle Everything, You Just Show Up"
+        subHeader="No stress, confusion or last-minute surprises."
         type="business"
       />
       <Countdown />
