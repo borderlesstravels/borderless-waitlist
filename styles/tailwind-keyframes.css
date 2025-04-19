@@ -1,6 +1,6 @@
 @theme {
   /* Animations */
-  --animate-blink: blink 1.2s ease-out infinite;
+  --animate-blink: blink 4s ease-out infinite;
 
   /* Keyframes */
   @keyframes blink {
